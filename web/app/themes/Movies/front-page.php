@@ -1,9 +1,15 @@
 <?php
 
     get_header();
+
     global $post;
-    $args = array( 'numberposts' => 100, 'category_name' => 'movie' );
-    $posts = get_posts( $args );
+ 
+  
+$posts = get_posts([
+  'post_type' => 'movies',
+  'post_status' => 'publish',
+  'numberposts' => -1
+]);
 
 ?>
 

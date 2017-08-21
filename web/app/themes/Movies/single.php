@@ -1,11 +1,18 @@
 <?php 
 // get the movie data 
 global $posts;
-$wp_query->movie ;
-$movie_id = $movie->ID ;
+$currentmovie;
+echo $currentmovie->ID;
 
- $args = array( 'numberposts' => 100, 'category_name' => 'articles' );
- $posts = get_posts( $args );
+//$wp_query->movie ;
+//$movie_id = $movie->ID ;
+
+$posts = get_posts([
+  'post_type' => 'articles',
+  'post_status' => 'publish',
+  'numberposts' => -1
+  // 'order'    => 'ASC'
+]);/*
 // get the movie article post 
  foreach($posts as $art) {
      $article_title =get_the_title(); // movie post title
@@ -16,7 +23,7 @@ $movie_id = $movie->ID ;
  
   
 
-
+/*
 
 
 
@@ -69,4 +76,4 @@ echo $content;
         <p class="body"><?php echo do_shortcode( $content ); ?></p>
      
        </div>
-</div>
+</div>*/
