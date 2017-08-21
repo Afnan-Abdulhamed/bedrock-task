@@ -1,0 +1,25 @@
+/*
+Theme Name:theme
+Theme URI: #
+Author: afnan
+Author URI: 
+Description: wordpress developer theme
+Version: 1
+License: none
+License URI:#
+Text Domain: task
+Tags: none
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+.name{color:darkblue;
+text-align: center;
+margin-top: 20px;
+font-size: 18px;
+font-weight: bold;}
+
+img {border:1px solid gray;margin: auto;}
+
+ul{list-style: none;}
